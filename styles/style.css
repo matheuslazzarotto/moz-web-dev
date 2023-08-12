@@ -1,0 +1,44 @@
+html {
+    font-size: 10px;
+    font-family: "DotGothic16", dot-gothic-16;
+    background-color: #4b2803;
+  }
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    color: #708d2c;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+p,
+li {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #708d2c;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.center {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(65, 41, 18);
+    padding: 0 20px 20px 20px;
+    border: 5px solid rgb(47, 34, 9);
+  }
+#btnUser{
+  margin-left: 100px;
+  width: 15%;
+}
