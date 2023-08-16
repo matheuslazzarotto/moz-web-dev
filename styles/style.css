@@ -1,7 +1,7 @@
 html {
     font-size: 10px;
     font-family: "DotGothic16", dot-gothic-16;
-    background-color: #4b2803;
+    background-color: #be9365;
   }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
     color: white;
     margin: 0;
     padding: 20px 0;
-    color: #708d2c;
+    color: #ebd339;
     text-shadow: 3px 3px 1px black;
   }
   
@@ -19,7 +19,7 @@ li {
     font-size: 20px;
     line-height: 2;
     letter-spacing: 1px;
-    color: #708d2c;
+    color: #ebd339;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -34,11 +34,18 @@ li {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: rgb(65, 41, 18);
+    background-color: rgb(154, 120, 88);
     padding: 0 20px 20px 20px;
-    border: 5px solid rgb(47, 34, 9);
+    border: 5px solid rgb(212, 154, 46);
   }
 #btnUser{
-  margin-left: 100px;
-  width: 15%;
+  background-color:#e2ca29;
+  border: none;
+  color: rgb(154, 120, 88);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "DotGothic16";
 }
