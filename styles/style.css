@@ -30,7 +30,7 @@ li {
     margin-right: auto;
     width: 25%;
   }
-body {
+main {
     width: 600px;
     margin: 0 auto;
     background-color: #000000;
@@ -41,4 +41,9 @@ body {
   nav {
     height: 50px;
     text-align:center;
+  }
+
+  .video-wrapper{
+    margin: auto;
+    width: fit-content;
   }
