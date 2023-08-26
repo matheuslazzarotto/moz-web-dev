@@ -1,28 +1,31 @@
+
+/* Base HTML styles */
 html {
-    font-size: 10px;
-    font-family: "Roboto Mono", roboto-mono;
-    background-color: #000000;
-  }
+    font-size: 10px;                 /* Sets the root font size to 10px. Other relative units like 'rem' often base their calculations on this value. */
+    font-family: "Roboto Mono", roboto-mono; /* Sets the default font family. "Roboto Mono" is the primary font, and "roboto-mono" acts as a fallback. */
+    background-color: #000000;      /* Sets the background color of the entire document to black. */
+}
 
+/* Heading 1 styles */
 h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #06cb13;
-    text-shadow: 3px 3px 1px #a309ba;
-  }
-  
-p,
-li {
-    font-size: 20px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color: #06cb13;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    font-size: 60px;                /* Specifies the font size for h1 headings as 60px. */
+    text-align: center;             /* Centers the text horizontally within its container. */
+    margin: 0;                      /* Removes the default margin from the top and bottom of the h1 heading. */
+    padding: 20px 0;                /* Adds padding of 20px to the top and bottom of the h1, with 0 padding on the left and right. */
+    color: #06cb13;                /* Sets the text color for h1 headings to a shade of green. */
+    text-shadow: 3px 3px 1px #a309ba; /* Applies a text shadow that is 3px to the right, 3px down, with a 1px blur radius, and in a shade of purple. */
+}
 
+/* Styles for paragraphs and list items */
+p, 
+li {
+    font-size: 20px;                /* Sets the font size for both paragraphs (p) and list items (li) to 20px. */
+    line-height: 2;                 /* Doubles the space between lines of text, creating a more spacious look. */
+    letter-spacing: 1px;           /* Increases the space between individual letters by 1px, improving readability. */
+    color: #06cb13;                /* Sets the text color for paragraphs and list items to the same shade of green as h1 headings. */
+    margin-left: 20px;             /* Adds 20px of space to the left side of paragraphs and list items. */
+    margin-right: 20px;            /* Adds 20px of space to the right side of paragraphs and list items. */
+}
 
 main {
   main {
@@ -35,73 +38,70 @@ main {
 }
 
   }
-
-  nav {
-    height: 50px;
-    text-align:center;
-  }
-
-  .video-wrapper{
-    margin: auto;
-    width: fit-content;
-  }
-
-  nav ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0;
-    margin: 0; /* Removes default margins */
-    list-style-type: none;
-    padding: 0;
+/* Navigation bar styles */
+nav {
+  height: 50px;              /* Sets a fixed height for the navigation bar to 50px. */
+  text-align:center;         /* Centers the navigation items (like links) horizontally within the navbar. */
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px; /* You can adjust this value for spacing between links */
-    display: inline-block;
-    margin-right: 20px; /* or whatever spacing you prefer */
-}
-
-.nav-button {
-  display: inline-block;
-  padding: 10px 15px; /* Adjust as needed for size */
-  border: 2px solid #06cb13; /* Using your green color for the border */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  color: #06cb13; /* Text color */
-  background-color: #000; /* Background color */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-}
-
-/* Hover effect */
-.nav-button:hover {
-  background-color: #06cb13; /* Swap text and background color on hover */
-  color: #000;
-}
-
-/* Video Container - This will dictate the video's aspect ratio and width */
-.video-container {
-  width: 80%; /* Use this to set how wide you want the video relative to its parent */
-  margin: 20px auto; /* Centering and spacing */
-  overflow: hidden; /* This ensures nothing spills out */
-
-  /* This maintains a 16:9 aspect ratio; adjust as needed */
-  padding-top: 45%;  /* Adjusted from 56.25% to 50% for a less tall aspect ratio */
-  position: relative;
-}
-
-/* Video Wrapper */
+/* Video container wrapper styles */
 .video-wrapper {
-  position: absolute; /* Makes it stick to its parent */
-  top: 0;
-  left: 0;
-  width: 100%; /* Fills the entire container */
-  height: 100%; /* Fills the entire container */
+  margin: auto;              /* Centers the container horizontally within its parent. */
+  width: fit-content;        /* Allows the container to adjust its width based on its content. */
 }
 
-/* The video itself */
+/* Styling for unordered lists within the navigation bar */
+nav ul {
+  list-style-type: none;     /* Removes the bullet points usually seen in unordered lists. */
+  padding: 0;                /* Removes default padding from the unordered list. */
+  margin: 0;                 /* Removes default margins from the unordered list. */
+}
+
+/* Styling for list items within the navigation bar */
+nav li {
+  display: inline-block;     /* Allows list items to be placed side-by-side (horizontally). */
+  margin-right: 20px;       /* Adds 20px of space to the right side of each list item, creating spacing between links. */
+}
+
+/* Styles for navigation buttons */
+.nav-button {
+display: inline-block;      /* Allows for horizontal alignment, similar to inline, but maintains block properties. */
+padding: 10px 15px;         /* Adds 10px of padding at the top and bottom, and 15px on the left and right sides of the button. */
+border: 2px solid #06cb13;  /* Sets a 2px thick green border around the button. */
+border-radius: 5px;         /* Rounds the corners of the button for a softer look. */
+text-decoration: none;      /* Removes the default underline usually seen on links. */
+color: #06cb13;             /* Sets the text color of the button to green. */
+background-color: #000;     /* Sets the background color of the button to black. */
+transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover effects, with a duration of 0.3 seconds. */
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+background-color: #06cb13;  /* Changes the background color to green when hovered. */
+color: #000;                /* Changes the text color to black when hovered. */
+}
+
+/* Styles for the video's outer container */
+.video-container {
+width: 80%;                 /* Sets the width of the container to be 80% of its parent's width. */
+margin: 20px auto;          /* Adds 20px of space above and below the container and auto margins on the sides, centering it horizontally. */
+overflow: hidden;           /* Ensures that any overflowing content (like the video) is hidden. */
+padding-top: 45%;           /* Padding at the top to maintain the video's aspect ratio. */
+position: relative;         /* Sets the positioning context for absolutely positioned child elements (like .video-wrapper). */
+}
+
+/* Styles for the video's inner wrapper */
+.video-wrapper {
+position: absolute;         /* Positions the wrapper in relation to the closest relative/absolute/fixed positioned ancestor, in this case .video-container. */
+top: 0;                     /* Aligns the top edge of the wrapper with the top edge of its positioned ancestor. */
+left: 0;                    /* Aligns the left edge of the wrapper with the left edge of its positioned ancestor. */
+width: 100%;                /* Makes the wrapper take the full width of its parent (.video-container). */
+height: 100%;               /* Makes the wrapper take the full height of its parent (.video-container). */
+}
+
+/* Styles for the video within the wrapper */
 .video-wrapper video {
-  width: 100%; /* Makes video responsive */
-  height: 100%; 
-  object-fit: cover; /* Ensures video covers the full area without distortion */
+width: 100%;                /* Makes the video take the full width of its parent (.video-wrapper). */
+height: 100%;               /* Makes the video take the full height of its parent (.video-wrapper). */
+object-fit: cover;          /* Ensures the video covers the full area of its container without being stretched or leaving blank spaces. */
 }
-
