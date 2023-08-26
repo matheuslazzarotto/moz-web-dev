@@ -77,3 +77,31 @@ nav li {
   background-color: #06cb13; /* Swap text and background color on hover */
   color: #000;
 }
+
+/* Video Container - This will dictate the video's aspect ratio and width */
+.video-container {
+  width: 80%; /* Use this to set how wide you want the video relative to its parent */
+  margin: 20px auto; /* Centering and spacing */
+  overflow: hidden; /* This ensures nothing spills out */
+
+  /* This maintains a 16:9 aspect ratio; adjust as needed */
+  padding-top: 45%;  /* Adjusted from 56.25% to 50% for a less tall aspect ratio */
+  position: relative;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: absolute; /* Makes it stick to its parent */
+  top: 0;
+  left: 0;
+  width: 100%; /* Fills the entire container */
+  height: 100%; /* Fills the entire container */
+}
+
+/* The video itself */
+.video-wrapper video {
+  width: 100%; /* Makes video responsive */
+  height: 100%; 
+  object-fit: cover; /* Ensures video covers the full area without distortion */
+}
+
