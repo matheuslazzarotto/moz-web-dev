@@ -23,19 +23,17 @@ li {
     margin-right: 20px;
   }
 
-.center {
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
+
 main {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #000000;
-    padding: 0 20px 20px 20px;
+  main {
+    width: 90%; /* This will make the width relative to its parent, often the viewport. */
+    max-width: 900px; /* This sets a maximum width, preventing it from becoming too wide on large screens. */
+    margin: 0 auto; /* Centers the box */
+    padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */
     border: 5px solid #06cb13;
+    border-radius: 20px; /* This is from the previous suggestion for rounded corners. */
+}
+
   }
 
   nav {
@@ -47,3 +45,35 @@ main {
     margin: auto;
     width: fit-content;
   }
+
+  nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0; /* Removes default margins */
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px; /* You can adjust this value for spacing between links */
+    display: inline-block;
+    margin-right: 20px; /* or whatever spacing you prefer */
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 15px; /* Adjust as needed for size */
+  border: 2px solid #06cb13; /* Using your green color for the border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #06cb13; /* Text color */
+  background-color: #000; /* Background color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.nav-button:hover {
+  background-color: #06cb13; /* Swap text and background color on hover */
+  color: #000;
+}
