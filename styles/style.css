@@ -39,7 +39,7 @@ main {
   width: 90%; /* This will make the width relative to its parent, often the viewport. */
   max-width: 900px; /* This sets a maximum width, preventing it from becoming too wide on large screens. */
   margin: 0 auto; /* Centers the box */
-  padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */  */
+  padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */
 }
 
 
