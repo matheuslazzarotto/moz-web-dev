@@ -27,17 +27,22 @@ li {
     margin-right: 20px;            /* Adds 20px of space to the right side of paragraphs and list items. */
 }
 
+
 main {
-  main {
     width: 90%; /* This will make the width relative to its parent, often the viewport. */
     max-width: 900px; /* This sets a maximum width, preventing it from becoming too wide on large screens. */
     margin: 0 auto; /* Centers the box */
     padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */
-    border: 5px solid #06cb13;
-    border-radius: 20px; /* This is from the previous suggestion for rounded corners. */
 }
 
-  }
+.mainProject {
+  width: 90%; /* This will make the width relative to its parent, often the viewport. */
+  max-width: 900px; /* This sets a maximum width, preventing it from becoming too wide on large screens. */
+  margin: 0 auto; /* Centers the box */
+  padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */  */
+}
+
+
 /* Navigation bar styles */
 nav {
   height: 50px;              /* Sets a fixed height for the navigation bar to 50px. */
@@ -106,3 +111,10 @@ height: 100%;               /* Makes the video take the full height of its paren
 object-fit: cover;          /* Ensures the video covers the full area of its container without being stretched or leaving blank spaces. */
 }
 
+.project-wrapper {
+  padding-left: 20px; /* To move content a bit away from the left edge */
+}
+
+.project-wrapper h1 {
+  text-align: left;
+}
