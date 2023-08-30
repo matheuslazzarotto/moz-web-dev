@@ -2,7 +2,7 @@
 /* Base HTML styles */
 html {
     font-size: 10px;                 /* Sets the root font size to 10px. Other relative units like 'rem' often base their calculations on this value. */
-    font-family: "Roboto Mono", roboto-mono; /* Sets the default font family. "Roboto Mono" is the primary font, and "roboto-mono" acts as a fallback. */
+    font-family: "Roboto Mono", monospace; /* Sets the default font family. "Roboto Mono" is the primary font, and "roboto-mono" acts as a fallback. */
     background-color: #000000;      /* Sets the background color of the entire document to black. */
 }
 
