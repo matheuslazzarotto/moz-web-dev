@@ -40,6 +40,7 @@ main {
   max-width: 900px; /* This sets a maximum width, preventing it from becoming too wide on large screens. */
   margin: 0 auto; /* Centers the box */
   padding: 0 20px 20px 20px; /* Retain your padding or adjust as needed */
+  color: black;
 }
 
 
@@ -49,11 +50,6 @@ nav {
   text-align:center;         /* Centers the navigation items (like links) horizontally within the navbar. */
 }
 
-/* Video container wrapper styles */
-.video-wrapper {
-  margin: auto;              /* Centers the container horizontally within its parent. */
-  width: fit-content;        /* Allows the container to adjust its width based on its content. */
-}
 
 /* Styling for unordered lists within the navigation bar */
 nav ul {
@@ -86,30 +82,22 @@ background-color: #06cb13;  /* Changes the background color to green when hovere
 color: #000;                /* Changes the text color to black when hovered. */
 }
 
-/* Styles for the video's outer container */
-.video-container {
-width: 80%;                 /* Sets the width of the container to be 80% of its parent's width. */
-margin: 20px auto;          /* Adds 20px of space above and below the container and auto margins on the sides, centering it horizontally. */
-overflow: hidden;           /* Ensures that any overflowing content (like the video) is hidden. */
-padding-top: 45%;           /* Padding at the top to maintain the video's aspect ratio. */
-position: relative;         /* Sets the positioning context for absolutely positioned child elements (like .video-wrapper). */
+/*body.terminal-view main {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}*/
+
+@font-face {
+  font-family: 'GregorianFLF';
+  src: url('../fonts/GregorianFLF.ttf') format('truetype');
 }
 
-/* Styles for the video's inner wrapper */
-.video-wrapper {
-position: absolute;         /* Positions the wrapper in relation to the closest relative/absolute/fixed positioned ancestor, in this case .video-container. */
-top: 0;                     /* Aligns the top edge of the wrapper with the top edge of its positioned ancestor. */
-left: 0;                    /* Aligns the left edge of the wrapper with the left edge of its positioned ancestor. */
-width: 100%;                /* Makes the wrapper take the full width of its parent (.video-container). */
-height: 100%;               /* Makes the wrapper take the full height of its parent (.video-container). */
+.custom-font {
+  font-family: 'GregorianFLF', sans-serif;
 }
 
-/* Styles for the video within the wrapper */
-.video-wrapper video {
-width: 100%;                /* Makes the video take the full width of its parent (.video-wrapper). */
-height: 100%;               /* Makes the video take the full height of its parent (.video-wrapper). */
-object-fit: cover;          /* Ensures the video covers the full area of its container without being stretched or leaving blank spaces. */
-}
 
 .project-wrapper {
   padding-left: 20px; /* To move content a bit away from the left edge */
