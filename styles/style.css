@@ -106,3 +106,15 @@ color: #000;                /* Changes the text color to black when hovered. */
 .project-wrapper h1 {
   text-align: left;
 }
+
+.static-text-box {
+  /* Set the fixed height of the box */
+  height: 250px;
+
+  /* Handle the overflow */
+  overflow-y: hidden; /* or you can use 'hidden' if you don't want a scrollbar */
+
+  /* Set the width of the box */
+  width: 100%;  /* or any fixed width */
+
+}
